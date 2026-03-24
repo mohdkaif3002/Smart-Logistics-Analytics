@@ -117,7 +117,7 @@ Score = 0.40 × Delay_Rate + 0.35 × Cost_per_km + 0.25 × Avg_Delivery_Days
 
 ## 🚀 Run Locally
 ```bash
-git clone https://github.com/YOUR_USERNAME/Smart-Logistics-Analytics.git
+git clone https://github.com/mohdkaif3002/Smart-Logistics-Analytics.git
 cd Smart-Logistics-Analytics
 pip install -r requirements.txt
 streamlit run app/app.py
