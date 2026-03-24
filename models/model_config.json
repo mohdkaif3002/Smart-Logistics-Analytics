@@ -1,0 +1,25 @@
+{
+    "threshold": 0.35,
+    "features": [
+        "Distance_km",
+        "Weight_kg",
+        "Freight_Cost_INR",
+        "Cost_per_km",
+        "Expected_Delivery_Days",
+        "Load_Utilization_%",
+        "Driver_Experience_Yrs",
+        "Month",
+        "Route_enc",
+        "Truck_enc",
+        "Weather_enc",
+        "Road_enc"
+    ],
+    "accuracy": 48.67,
+    "precision": 16.87,
+    "recall": 63.64,
+    "f1_score": 26.67,
+    "training_samples": 4092,
+    "test_samples": 600,
+    "smote_applied": true,
+    "model_version": "v1.0"
+}
