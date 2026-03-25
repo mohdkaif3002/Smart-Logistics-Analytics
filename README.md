@@ -121,22 +121,28 @@ Lower score = Better route
 ## 📸 Screenshots
 
 ### 📊 Dashboard
-![Dashboard](charts/chart1_delay_overview.png)
+![Dashboard](charts/01_delay_overview.png)
 
-### 🔍 Route Analysis  
-![Route Analysis](charts/chart2_route_analysis.png)
+### 🔍 Route Analysis
+![Route Analysis](charts/02_route_analysis.png)
 
 ### 📅 Monthly Trends
-![Monthly Trends](charts/chart3_monthly_trends.png)
+![Monthly Trends](charts/03_monthly_trends.png)
 
 ### 🌦️ Weather & Road Impact
-![Weather Road](charts/chart4_weather_road.png)
+![Weather Road](charts/04_weather_road_impact.png)
 
-### 🗺️ Route Optimization
-![Route Optimization](charts/chart6_route_optimization.png)
+### 🗺️ Route vs Month Heatmap
+![Heatmap](charts/05_route_month_heatmap.png)
+
+### 🏆 Route Optimization Rankings
+![Route Optimization](charts/06_route_optimization.png)
+
+### 📊 Model Comparison
+![Model Comparison](charts/10_model_comparison.png)
 
 ### 🤖 Feature Importance
-![Feature Importance](charts/chart11_feature_importance.png)
+![Feature Importance](charts/11_feature_importance.png)
 
 ---
 
