@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -27,12 +28,18 @@ st.markdown("""
 def load_model():
     model = joblib.load("models/xgboost_model.pkl")
     encoders = {}
-    for col in ["Route","Truck_Type","Weather_Condition",
-                "Road_Condition","Cargo_Type",
-                "Exp_Category","Season"]:
+    encoder_files = {
+        "Route"             : "models/le_route.pkl",
+        "Truck_Type"        : "models/le_truck_type.pkl",
+        "Weather_Condition" : "models/le_weather_condition.pkl",
+        "Road_Condition"    : "models/le_road_condition.pkl",
+        "Cargo_Type"        : "models/le_cargo_type.pkl",
+        "Exp_Category"      : "models/le_exp_category.pkl",
+        "Season"            : "models/le_season.pkl",
+    }
+    for col, path in encoder_files.items():
         try:
-            encoders[col] = joblib.load(
-                f"models/le_{col.lower()}.pkl")
+            encoders[col] = joblib.load(path)
         except:
             pass
     with open("models/model_config_v2.json") as f:
@@ -55,7 +62,7 @@ st.sidebar.markdown("""
      background:#0D1B2A; border-radius:8px;">
 <h2 style="color:#0891B2;">🚛 Smart Logistics</h2>
 <p style="color:#94a3b8; font-size:12px;">
-India Heavy Freight Analytics v2.0</p>
+India Heavy Freight Analytics</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -92,7 +99,7 @@ if page == "📊 Dashboard":
     st.markdown("""
     <div class="main-header">
     <h1>🚛 Smart Logistics Analytics System</h1>
-    <p>India Heavy Freight — Real-time Performance Dashboard v2.0</p>
+    <p>India Heavy Freight — Performance Dashboard</p>
     </div>
     """, unsafe_allow_html=True)
 
